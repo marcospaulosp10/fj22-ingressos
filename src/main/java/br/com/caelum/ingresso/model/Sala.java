@@ -3,6 +3,8 @@ package br.com.caelum.ingresso.model;
 import org.hibernate.validator.constraints.NotBlank;
 
 import javax.persistence.*;
+
+import java.time.LocalTime;
 import java.util.*;
 import java.util.stream.Collectors;
 
