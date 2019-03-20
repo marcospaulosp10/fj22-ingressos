@@ -31,7 +31,7 @@
             </c:if>
             <form action="/login" method="post">
                 <span class="text-danger">${param.error}</span>
-
+				<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
                 <div class="form-group">
                     <label for="login">E-mail:</label>
                     <input id="login" type="text" name="email" class="form-control">

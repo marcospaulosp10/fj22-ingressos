@@ -102,6 +102,7 @@
 			</table>
 			<div class="tipoIngresso">
 	        <form action="/compra/ingressos" method="post">
+				<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
 	            <table class="table table-hover" id="tabela-ingressos">
 	                <thead>
 	                    <th>Sala</th>

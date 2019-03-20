@@ -8,6 +8,7 @@
     <jsp:body>
    		<div class=" col-md-6 col-md-offset-3">
         <form action="/compra/comprar" method="post">
+		  <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
             <table class="table table-hover ">
                 <thead>
                 <th>Sala</th>
